@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>О проекте | PhysX++</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">PhysX++</div>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <ul class="menu" id="nav-menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О проекте</a></li>
+      <li><a href="team.html">Участники</a></li>
+      <li><a href="journal.html">Журнал</a></li>
+      <li><a href="resources.html">Ресурсы</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">О проекте</h1>
+    <p class="page-subtitle">Физический движок для моделирования и визуализации</p>
+
+    <!-- Блок с описанием проекта -->
+    <div class="glass-section info-block">
+      <h2>Описание проекта</h2>
+      <p>Проект представляет собой разработку физического движка с использованием C++. Он моделирует поведение твёрдых тел, взаимодействие объектов, гравитацию и столкновения. Движок предназначен для образовательных, игровых и симуляционных задач.</p>
+    </div>
+
+    <!-- Блок с целями -->
+    <div class="glass-section features-block">
+      <h2>Цели проекта</h2>
+      <ul class="branch">
+        <li>Создание системы физических симуляций</li>
+        <li>Обеспечение высокой производительности вычислений</li>
+        <li>Создание интерактивной визуализации физических процессов</li>
+      </ul>
+    </div>
+
+    <!-- Блок с задачами -->
+    <div class="glass-section roadmap-block">
+      <h2>Основные задачи</h2>
+      <div class="tasks-grid">
+        <div class="task-item">
+          <h3>Физическая модель</h3>
+          <ul class="branch">
+            <li>Моделирование столкновений</li>
+            <li>Расчет гравитации</li>
+          </ul>
+        </div>
+        <div class="task-item">
+          <h3>Визуализация</h3>
+          <ul class="branch">
+            <li>Реализация камеры и управления</li>
+            <li>Оптимизация отрисовки</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="team.html">Участники</a>
+      <a href="journal.html">Журнал</a>
+      <a href="resources.html">Ресурсы</a>
+    </div>
+    <p>© 2025 PhysX++ | Все права защищены</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

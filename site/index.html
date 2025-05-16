@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Главная | Проект</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">PhysX++</div>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <ul class="menu" id="nav-menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О проекте</a></li>
+      <li><a href="team.html">Участники</a></li>
+      <li><a href="journal.html">Журнал</a></li>
+      <li><a href="resources.html">Ресурсы</a></li>
+    </ul>
+  </nav>
+
+  <section class="page-banner">
+    <h1>Добро пожаловать!</h1>
+    <p>Проект представляет собой разработку физического движка с использованием C++. Он моделирует поведение твёрдых тел, взаимодействие объектов, гравитацию и столкновения. Движок предназначен для образовательных, игровых и симуляционных задач.</p>
+    <a href="about.html" class="banner-btn">О проекте</a>
+  </section>
+
+  <div class="content-wrapper">
+    <!-- Здесь будет основной контент страницы -->
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="team.html">Участники</a>
+      <a href="journal.html">Журнал</a>
+      <a href="resources.html">Ресурсы</a>
+    </div>
+    <p>© 2025 PhysX++ | Все права защищены</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,600 @@
+/* ==== ОБЩИЕ НАСТРОЙКИ ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+/* ==== НАВИГАЦИЯ ==== */
+nav {
+  background-color: rgba(20, 20, 20, 0.95);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 5px #a445ff;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px #a445ff;
+}
+
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* ==== БАННЕР ==== */
+.page-banner {
+  background: linear-gradient(145deg, #1a1a1a, #0e0e0e);
+  padding: 5rem 2rem;
+  text-align: center;
+  box-shadow: inset 0 0 50px #a445ff10;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-banner h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px #a445ff;
+}
+
+.page-banner p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.banner-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  background-color: rgba(164, 69, 255, 0.2);
+  border: 1px solid rgba(164, 69, 255, 0.5);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.banner-btn:hover {
+  background-color: rgba(164, 69, 255, 0.4);
+  box-shadow: 0 0 15px rgba(164, 69, 255, 0.5);
+}
+
+/* ==== КОНТЕЙНЕР ==== */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* ==== GLASS СЕКЦИИ ==== */
+.glass-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-section:hover {
+  transform: translateY(-5px);
+}
+
+.glass-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid #a445ff;
+  text-shadow: 0 0 10px #a445ff66;
+}
+
+.glass-section p,
+.glass-section li {
+  color: #dddddd;
+}
+
+/* ==== ИНДИВИДУАЛЬНОЕ ОФОРМЛЕНИЕ ==== */
+.info-block { box-shadow: 0 0 30px rgba(100, 100, 255, 0.2); }
+.tools-block { box-shadow: 0 0 30px rgba(69, 150, 255, 0.25); }
+.features-block { box-shadow: 0 0 30px rgba(164, 69, 255, 0.25); }
+.demo-block { box-shadow: 0 0 30px rgba(255, 69, 150, 0.25); }
+.roadmap-block { box-shadow: 0 0 30px rgba(69, 255, 180, 0.25); }
+.faq-block { box-shadow: 0 0 30px rgba(255, 255, 100, 0.25); }
+
+/* ==== СПИСКИ ==== */
+.branch {
+  list-style: none;
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.branch li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.branch li::before {
+  content: '➤';
+  position: absolute;
+  left: 0;
+  color: #a445ff;
+}
+
+/* ==== ИЗОБРАЖЕНИЯ ==== */
+.banner-image {
+  max-width: 100%;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(164, 69, 255, 0.3);
+}
+
+/* ==== АНИМАЦИЯ ==== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out both;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  text-align: center;
+  background-color: #121212;
+  padding: 2rem 1rem;
+  color: #888;
+  border-top: 1px solid #2c2c2c;
+  margin-top: auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(164, 69, 255, 0.5);
+}
+
+/* ==== АДАПТИВНОСТЬ ==== */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .page-banner {
+    padding: 4rem 1.5rem;
+    min-height: calc(100vh - 70px);
+  }
+
+  .page-banner h1 {
+    font-size: 2.2rem;
+  }
+
+  .page-banner p {
+    font-size: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+/* ==== СТИЛИ ДЛЯ СТРАНИЦЫ УЧАСТНИКОВ ==== */
+.page-title {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+  text-shadow: 0 0 15px #a445ff;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.member-card {
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-10px);
+}
+
+.member-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(164, 69, 255, 0.3);
+  padding-bottom: 1rem;
+}
+
+.member-header h2 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.member-group {
+  background-color: rgba(164, 69, 255, 0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #a445ff;
+}
+
+.member-role {
+  color: #a445ff;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.member-content {
+  color: #dddddd;
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+/* ==== СТИЛИ ДЛЯ СТРАНИЦЫ "О ПРОЕКТЕ" ==== */
+.page-title {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+  text-shadow: 0 0 15px #a445ff;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.task-item {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.task-item h3 {
+  color: #a445ff;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .tasks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==== СТИЛИ ДЛЯ СТРАНИЦЫ РЕСУРСОВ ==== */
+.page-title {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+  text-shadow: 0 0 15px #a445ff;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.resource-card {
+  display: flex;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+  color: inherit;
+}
+
+.resource-card:hover {
+  background: rgba(164, 69, 255, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(164, 69, 255, 0.2);
+  border-color: rgba(164, 69, 255, 0.3);
+}
+
+.resource-icon {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: #a445ff;
+}
+
+.resource-content h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.resource-content p {
+  color: #aaa;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .resource-card {
+    padding: 1.2rem;
+  }
+}
+
+/* ==== СТИЛИ ДЛЯ СТРАНИЦЫ ЖУРНАЛА ==== */
+.page-title {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+  text-shadow: 0 0 15px #a445ff;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.journal-entry {
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journal-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(164, 69, 255, 0.2) !important;
+}
+
+.entry-date {
+  color: #a445ff;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.entry-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.entry-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.entry-video-preview {
+  position: relative;
+  height: 200px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.entry-video-preview video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.entry-excerpt {
+  color: #ccc;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.entry-more {
+  color: #a445ff;
+  font-weight: bold;
+}
+
+.modal-image {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  .modal-image {
+    height: 200px;
+  }
+}

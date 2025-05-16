@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Участники | PhysX++</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">PhysX++</div>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О проекте</a></li>
+      <li><a href="team.html">Участники</a></li>
+      <li><a href="journal.html">Журнал</a></li>
+      <li><a href="resources.html">Ресурсы</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">Участники проекта</h1>
+    <p class="page-subtitle">Команда, стоящая за реализацией всех ключевых этапов</p>
+
+    <div class="team-grid">
+      <!-- Карточка 1 -->
+      <div class="glass-section member-card" style="box-shadow: 0 0 30px rgba(100, 100, 255, 0.2);">
+        <div class="member-header">
+          <h2>Грачев Павел</h2>
+          <span class="member-group">241-337</span>
+        </div>
+        <div class="member-role">Разработчик интерфейса</div>
+        <div class="member-content">
+          <ul class="branch">
+            <li>Разработка пользовательского интерфейса</li>
+            <li>Создание адаптивной верстки</li>
+            <li>Интеграция с физическим движком</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="glass-section member-card" style="box-shadow: 0 0 30px rgba(164, 69, 255, 0.25);">
+        <div class="member-header">
+          <h2>Рябов Михаил</h2>
+          <span class="member-group">241-337</span>
+        </div>
+        <div class="member-role">Физический программист</div>
+        <div class="member-content">
+          <ul class="branch">
+            <li>Написание математической логики движка</li>
+            <li>Реализация алгоритмов столкновений</li>
+            <li>Оптимизация производительности</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="glass-section member-card" style="box-shadow: 0 0 30px rgba(69, 255, 180, 0.25);">
+        <div class="member-header">
+          <h2>Ткачев Дмитрий</h2>
+          <span class="member-group">241-337</span>
+        </div>
+        <div class="member-role">Архитектор проекта</div>
+        <div class="member-content">
+          <ul class="branch">
+            <li>Проектирование архитектуры системы</li>
+            <li>Координация работы команды</li>
+            <li>Тестирование и отладка</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="team.html">Участники</a>
+      <a href="journal.html">Журнал</a>
+      <a href="resources.html">Ресурсы</a>
+    </div>
+    <p>© 2025 PhysX++ | Все права защищены</p>
+    <p>Контактная информация: project@example.com | +7 (123) 456-78-90</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

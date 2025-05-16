@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ресурсы | PhysX++</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">PhysX++</div>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <ul class="menu" id="nav-menu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О проекте</a></li>
+      <li><a href="team.html">Участники</a></li>
+      <li><a href="journal.html">Журнал</a></li>
+      <li><a href="resources.html">Ресурсы</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">Ресурсы</h1>
+    <p class="page-subtitle">Материалы и ссылки, использованные в проекте</p>
+
+    <div class="glass-section resources-block">
+      <h2>Основные ресурсы</h2>
+      <div class="resources-grid">
+        <!-- Ресурс 1 -->
+        <a href="https://fabianhbr.ch/projects/physics-engine/" target="_blank" class="resource-card">
+          <div class="resource-icon">📚</div>
+          <div class="resource-content">
+            <h3>Пример 2D движка на С++</h3>
+            <p>Документация и гайд по созданию 2D движка на С++</p>
+          </div>
+        </a>
+
+        <!-- Ресурс 2 -->
+        <a href="https://github.com/kalpitborkar/2D-Physics-Engine/tree/master" target="_blank" class="resource-card">
+          <div class="resource-icon">🌐</div>
+          <div class="resource-content">
+            <h3>Реплзиторий с 2D движком на С++ в качестве примера</h3>
+            <p>Документация и гайд по созданию 2D движка на С++</p>
+          </div>
+        </a>
+
+        <!-- Ресурс 3 -->
+      
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О проекте</a>
+      <a href="team.html">Участники</a>
+      <a href="journal.html">Журнал</a>
+      <a href="resources.html">Ресурсы</a>
+    </div>
+    <p>© 2025 PhysX++ | Все права защищены</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
