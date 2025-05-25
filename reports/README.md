@@ -32,7 +32,6 @@ public:
     Square();
     const sf::Sprite& getSprite() const;
     
-    // Управление движением
     void setMovement(int direction, bool state);
     void update(float deltaTime);
 };
